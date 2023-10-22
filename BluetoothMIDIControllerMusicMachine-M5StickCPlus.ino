@@ -61,12 +61,19 @@ void loop() {
 
   if (isConnected) {
     // Check if button A is pressed to play another random note
-    if (M5.BtnA.wasReleased()) {
-      if (notePlaying) {
-        changeNote();
-      } else {
+    if (M5.BtnA.isPressed()) {
+      if (!notePlaying) {
         changeNote();
         notePlaying = true;
+      }
+    } else {
+      // Button A is released, stop the note
+      if (notePlaying) {
+        for (int i = 0; i < numPlayingNotes; i++) {
+          MIDI.sendNoteOff(playingNotes[i], 0, 1);
+        }
+        numPlayingNotes = 0;
+        notePlaying = false;
       }
     }
 
