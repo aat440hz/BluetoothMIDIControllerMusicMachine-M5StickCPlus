@@ -1,44 +1,55 @@
 # Bluetooth MIDI Controller Music Machine
 
-The Bluetooth MIDI Controller Music Machine is an engaging project designed for musicians and music producers to generate random MIDI notes within a selected key signature. This tool is excellent for stimulating creativity and coming up with unique melodies and chord progressions.
+The Bluetooth MIDI Controller Music Machine is a versatile tool designed for musicians and music producers to stimulate creativity by generating random MIDI notes within selected key signatures. It's an excellent device for creating distinctive melodies and exploring new musical ideas.
 
 ## How It Works
 
-The Bluetooth MIDI Controller Music Machine generates random MIDI notes based on the selected key signature. It's a versatile tool for creating distinctive melodies and enhancing your music production journey with spontaneous inspiration.
+The Bluetooth MIDI Controller Music Machine randomly generates MIDI notes based on the selected key signature. Users can seamlessly switch between key signatures to inspire unique musical creations. It's designed to work as a MIDI controller with various digital audio workstations and music production software.
 
 ## Dependencies
 
-To ensure smooth operation with REAPER on Windows 10, you'll need:
+To ensure smooth operation, you'll need:
 
-1. **MIDIberry**: A MIDI loopback driver to route MIDI data between applications on your computer. [Download MIDIberry](https://www.manyetas.com/creed/midiberry).
-2. **loopMIDI**: A tool for creating virtual MIDI ports on Windows, facilitating communication between different MIDI software applications. [Download loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html).
+1. **MIDIberry (Windows 10)**: A MIDI loopback driver to route MIDI data between applications. [Download MIDIberry](https://www.manyetas.com/creed/midiberry).
+2. **loopMIDI (Windows 10)**: A tool for creating virtual MIDI ports, facilitating communication between MIDI applications. [Download loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html).
 
-## Compatibility
+## Compatibility and Setup Instructions
 
-The Bluetooth MIDI Controller Music Machine is confirmed to work well with:
+The Bluetooth MIDI Controller Music Machine is confirmed to work well with the following setups:
 
-- **REAPER on Windows 10**: Tested extensively for reliability and performance.
-- **MIDI+BTLE and BandLab on Android**: Newly compatible, expanding its usability for mobile musicians and producers.
+### For Windows 10 Users:
 
-While primarily designed for Windows 10, you may find success using it with other Digital Audio Workstations (DAWs) and operating systems. Experiment with your setup and share your experiences!
+- **REAPER (or any DAW supporting MIDI):** Tested for reliability and performance.
+- **Board Selection:** Use the ESP32 board definition from Espressif (`https://dl.espressif.com/dl/package_esp32_index.json`) when working with Windows. This has been found to resolve connectivity issues specific to Windows.
 
-## Installation
+### For Android Users:
 
-1. **MIDIberry and loopMIDI**: Download and install both applications following the instructions on their respective websites.
-2. **Repository**: Clone or download this repository to your local machine.
-3. **Arduino Environment**: Open the project in your Arduino development environment and upload the code to your hardware.
-4. **Connection**: Connect your hardware to your computer and open REAPER (or your preferred DAW).
-5. **MIDI Configuration**: Configure your MIDI inputs in the DAW to use MIDIberry or the respective driver for Android compatibility.
-6. **Initialization**: Activate the Bluetooth MIDI Controller Music Machine on your hardware, and you're set to create music!
+- **MIDI+BTLE and BandLab:** Provides expanded usability for mobile musicians and producers.
+- **Board Selection:** Use the M5StickCPlus board definition from M5Stack (`https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/package_m5stack_index.json`) when working with Android. This ensures compatibility with Android-specific MIDI features.
+
+### General Installation:
+
+1. **Download and Install MIDIberry and loopMIDI (Windows 10):** Follow the instructions on their respective websites to install these applications.
+2. **Clone the Repository:** Obtain the project files from this GitHub repository.
+3. **Set Up Arduino Environment:**
+    - Open the project in your Arduino development environment.
+    - Select the correct board from the Tools menu based on your target OS (Windows or Android).
+    - Upload the code to your M5StickC or similar hardware.
+4. **Hardware Connection:** Connect your hardware to your computer or mobile device via Bluetooth.
+5. **MIDI Configuration:**
+    - In your DAW or music production software, configure the MIDI inputs to use MIDIberry (Windows) or the respective MIDI driver for Android.
+    - Ensure the software is set to receive MIDI from the correct virtual port if using loopMIDI or a similar tool.
+6. **Initialization:** Activate the Bluetooth MIDI Controller Music Machine on your hardware, and you're ready to start creating music!
 
 ## Feedback and Contributions
 
-We welcome feedback, suggestions, and issue reports to continually improve the Bluetooth MIDI Controller Music Machine. Please use this GitHub repository's issue section for any comments or problems you encounter.
+We encourage users to share their experiences, especially regarding compatibility with different systems and setups. Your feedback helps improve this tool for everyone!
 
-Contributions are also appreciated! If you have code improvements or feature suggestions, feel free to submit pull requests.
+- **Reporting Issues:** Please use the issues section of this GitHub repository for any problems or suggestions.
+- **Contributions:** Code improvements and feature suggestions are welcome! Feel free to fork this repository and submit pull requests.
 
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE.md).
 
-Enjoy your creative journey with the Bluetooth MIDI Controller Music Machine!
+Happy music making with the Bluetooth MIDI Controller Music Machine!
