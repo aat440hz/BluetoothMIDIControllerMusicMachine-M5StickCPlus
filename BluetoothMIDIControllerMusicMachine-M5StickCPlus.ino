@@ -1,5 +1,5 @@
-#include <Arduino.h>
 #include <M5StickCPlus.h>
+#include <Arduino.h>
 #include <BLEMIDI_Transport.h>
 #include <hardware/BLEMIDI_ESP32.h>
 
