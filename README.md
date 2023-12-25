@@ -15,31 +15,32 @@ To ensure smooth operation, you'll need:
 
 ## Compatibility and Setup Instructions
 
-The Bluetooth MIDI Controller Music Machine is confirmed to work well with the following setups:
+The Bluetooth MIDI Controller Music Machine has been confirmed to work well with various setups including Windows 10, Android, and now iPhone devices, providing a versatile tool for musicians and producers.
 
 ### For Windows 10 Users:
 
 - **REAPER (or any DAW supporting MIDI):** Tested for reliability and performance.
-- **Board Selection:** Use the M5StickC ESP32 board definition from Espressif (`https://dl.espressif.com/dl/package_esp32_index.json`) when working with Windows. This has been found to resolve connectivity issues specific to Windows.
+- **Board Selection:** Use the M5StickC ESP32 board definition from Espressif (`https://dl.espressif.com/dl/package_esp32_index.json`) when working with Windows to resolve connectivity issues.
 
-### For Android Users:
+### For Android and iPhone Users:
 
-- **MIDI+BTLE and BandLab:** Provides expanded usability for mobile musicians and producers.
-- **Board Selection:** Use the M5StickCPlus board definition from M5Stack (`https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/package_m5stack_index.json`) when working with Android. This ensures compatibility with Android-specific MIDI features.
+- **Android: MIDI+BTLE and BandLab.**
+- **iPhone: Bluetooth MIDI Connect by KORG and BandLab (available on the Apple Store).**
+- **Board Selection for Both Android and iPhone:** Use the M5StickCPlus board definition from M5Stack (`https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/package_m5stack_index.json`). This board selection has been tested and works well for both Android and iPhone, facilitating a consistent experience across mobile devices.
 
 ### General Installation:
 
-1. **Download and Install MIDIberry and loopMIDI (Windows 10):** Follow the instructions on their respective websites to install these applications.
-2. **Clone the Repository:** Obtain the project files from this GitHub repository.
+1. **Download and Install Necessary Applications:** MIDIberry and loopMIDI for Windows 10, and respective MIDI applications for mobile devices.
+2. **Clone the Repository:** Obtain the project files from the GitHub repository.
 3. **Set Up Arduino Environment:**
     - Open the project in your Arduino development environment.
-    - Select the correct board from the Tools menu based on your target OS (Windows or Android).
+    - Select the correct board from the Tools menu based on your target OS (Windows, Android, or iPhone).
     - Upload the code to your M5StickC or similar hardware.
 4. **Hardware Connection:** Connect your hardware to your computer or mobile device via Bluetooth.
 5. **MIDI Configuration:**
-    - In your DAW or music production software, configure the MIDI inputs to use MIDIberry (Windows) or the respective MIDI driver for Android.
-    - Ensure the software is set to receive MIDI from the correct virtual port if using loopMIDI or a similar tool.
-6. **Initialization:** Activate the Bluetooth MIDI Controller Music Machine on your hardware, and you're ready to start creating music!
+    - In your DAW or music production software, configure the MIDI inputs to use the appropriate MIDI driver.
+    - Ensure the software is set to receive MIDI from the correct virtual port if using tools like loopMIDI.
+6. **Initialization:** Activate the Bluetooth MIDI Controller Music Machine on your hardware to start creating music!
 
 ## Feedback and Contributions
 
@@ -52,4 +53,4 @@ We encourage users to share their experiences, especially regarding compatibilit
 
 This project is open-source and available under the [MIT License](LICENSE.md).
 
-Happy music making with the Bluetooth MIDI Controller Music Machine!
+Enjoy creating music with the Bluetooth MIDI Controller Music Machine, now compatible with Windows, Android, and iPhone!
