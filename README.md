@@ -20,7 +20,7 @@ The Bluetooth MIDI Controller Music Machine has been confirmed to work well with
 ### For Windows 10 Users:
 
 - **REAPER (or any DAW supporting MIDI):** Tested for reliability and performance.
-- **Board Selection:** Use the M5StickC ESP32 board definition from Espressif (`https://dl.espressif.com/dl/package_esp32_index.json`) when working with Windows to resolve connectivity issues. You can also try the M5StickCPlus board from M5Stack (https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/package_m5stack_index.json)
+- **Board Selection:** Use the M5StickC ESP32 board definition from Espressif (`https://dl.espressif.com/dl/package_esp32_index.json`) when working with Windows to resolve connectivity issues. You can also try the M5StickCPlus board from M5Stack (`https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/package_m5stack_index.json`)
 
 ### For Android and iPhone Users:
 
