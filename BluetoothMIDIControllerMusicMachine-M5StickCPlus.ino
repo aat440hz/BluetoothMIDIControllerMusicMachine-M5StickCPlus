@@ -1,7 +1,7 @@
 #include <M5StickCPlus.h>
 #include <Arduino.h>
 #include <BLEMIDI_Transport.h>
-#include <hardware/BLEMIDI_ESP32.h>
+#include <hardware/BLEMIDI_ESP32_NimBLE.h>
 
 BLEMIDI_CREATE_DEFAULT_INSTANCE()
 
