@@ -8,7 +8,7 @@ BLEMIDI_CREATE_DEFAULT_INSTANCE()
 bool isConnected = false;
 bool notePlaying = false;
 int currentNote = -1; // Initial note set to -1 to indicate no note is playing
-const int maxNotes = 12; // Maximum number of notes that can play simultaneously
+const int maxNotes = 1; // Maximum number of notes that can play simultaneously
 int playingNotes[maxNotes]; // Array to store the currently playing notes
 int numPlayingNotes = 0; // Number of currently playing notes
 
